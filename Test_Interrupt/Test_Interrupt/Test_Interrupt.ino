@@ -42,6 +42,11 @@ int sensorPin = A0;
 int sensorValue = 0;
 float sensorValue_f = 0.0;
 
+// Interruption
+const byte interruptPin = 2;
+volatile byte alert_state = LOW;
+byte test_int = LOW;
+
 
 SoftwareSerial mySerial(10, 11); // RX, TX
 
@@ -55,6 +60,10 @@ void setup()
   //output LED pin
   pinMode(13, OUTPUT);
   led_on();
+
+// Interrupt initialization
+  pinMode(interruptPin,INPUT);
+  attachInterrupt(digitalPinToInterrupt(interruptPin),gaz_alert,CHANGE);
 
   // Open serial communications and wait for port to open:
   Serial.begin(57600); //serial port to computer
@@ -139,7 +148,8 @@ const char *appSKey = "6B92C900017FD5C4DA93768A84EC6180";
 void loop()
 {
     //led_on();
-
+    test_int = digitalRead(interruptPin);
+    Serial.println("Test :"+(String)test_int);
     // Getting the value of the sensor and ADC
     sensorValue=analogRead(sensorPin);
     sensorValue_f=(5./1024.)*sensorValue;
@@ -149,7 +159,12 @@ void loop()
     int16_t gaz = (int16_t)(sensorValue_f * 1000);
 
     byte data[3];
-    data[0] = 0x00;
+    if (alert_state == 0){
+      data[0] = 0x00;
+    }
+    else if (alert_state == 1) {
+      data[0] = 0x01;
+    }
     data[1] = gaz >> 8;
     data[2] = gaz & 0xFF;
 
@@ -174,3 +189,8 @@ void led_off()
 {
   digitalWrite(13, 0);
 }
+
+void gaz_alert() {
+  alert_state =  !alert_state;
+}
+
