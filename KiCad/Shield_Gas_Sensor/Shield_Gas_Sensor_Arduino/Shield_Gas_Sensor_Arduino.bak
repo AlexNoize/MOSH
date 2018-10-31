@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Shield_Gas_Sensor_Arduino-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -488,4 +489,82 @@ F 3 "" H 3800 1600 50  0001 C CNN
 	1    3800 1600
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:Buzzer BZ?
+U 1 1 5BCE0094
+P 3350 3900
+F 0 "BZ?" V 3402 3713 50  0000 R CNN
+F 1 "Buzzer" V 3311 3713 50  0000 R CNN
+F 2 "" V 3325 4000 50  0001 C CNN
+F 3 "~" V 3325 4000 50  0001 C CNN
+	1    3350 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5BCE0248
+P 3450 4300
+F 0 "D?" V 3488 4183 50  0000 R CNN
+F 1 "LED" V 3397 4183 50  0000 R CNN
+F 2 "" H 3450 4300 50  0001 C CNN
+F 3 "~" H 3450 4300 50  0001 C CNN
+	1    3450 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BCE0530
+P 3250 4600
+F 0 "#PWR?" H 3250 4450 50  0001 C CNN
+F 1 "+5V" H 3265 4773 50  0000 C CNN
+F 2 "" H 3250 4600 50  0001 C CNN
+F 3 "" H 3250 4600 50  0001 C CNN
+	1    3250 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BCE4068
+P 3450 4600
+F 0 "#PWR?" H 3450 4350 50  0001 C CNN
+F 1 "GND" H 3455 4427 50  0000 C CNN
+F 2 "" H 3450 4600 50  0001 C CNN
+F 3 "" H 3450 4600 50  0001 C CNN
+	1    3450 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4000 3250 4600
+Wire Wire Line
+	3450 4000 3450 4150
+Wire Wire Line
+	3450 4450 3450 4600
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5BCE6F8A
+P 4500 4300
+F 0 "SW?" V 4454 4448 50  0000 L CNN
+F 1 "SW_Push" V 4545 4448 50  0000 L CNN
+F 2 "" H 4500 4500 50  0001 C CNN
+F 3 "" H 4500 4500 50  0001 C CNN
+	1    4500 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BCE7069
+P 4500 4700
+F 0 "#PWR?" H 4500 4450 50  0001 C CNN
+F 1 "GND" H 4505 4527 50  0000 C CNN
+F 2 "" H 4500 4700 50  0001 C CNN
+F 3 "" H 4500 4700 50  0001 C CNN
+	1    4500 4700
+	1    0    0    -1  
+$EndComp
+Text Label 4500 3900 0    50   ~ 0
+Reset
+Wire Wire Line
+	4500 3900 4500 4100
+Wire Wire Line
+	4500 4500 4500 4700
 $EndSCHEMATC
