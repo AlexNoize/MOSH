@@ -24,4 +24,5 @@
   (lib (name contrib)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/contrib.lib)(options "")(descr ""))
   (lib (name valves)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/valves.lib)(options "")(descr ""))
   (lib (name Shield_Gas_Sensor_Arduino-rescue)(type Legacy)(uri ${KIPRJMOD}/Shield_Gas_Sensor_Arduino-rescue.lib)(options "")(descr ""))
+  (lib (name RN2483_Breakout)(type Legacy)(uri U:/Windows/Bureau/MOSH/KiCad/Shield_Gas_Sensor/Shield_Gas_Sensor_Arduino/RN2483_Breakout.lib)(options "")(descr ""))
 )

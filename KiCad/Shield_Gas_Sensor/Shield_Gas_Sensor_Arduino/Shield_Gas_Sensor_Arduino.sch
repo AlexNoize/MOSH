@@ -412,31 +412,6 @@ F 3 "" H 9250 5050 50  0001 C CNN
 $EndComp
 Text Label 8750 4150 0    50   ~ 0
 A0
-Text Label 3800 900  2    50   ~ 0
-Tx
-Text Label 3800 1000 2    50   ~ 0
-Rx
-Text Label 3800 1100 2    50   ~ 0
-CTS
-Text Label 3800 1200 2    50   ~ 0
-RTS
-Text Label 3800 1300 2    50   ~ 0
-RST
-Text Label 3800 1400 2    50   ~ 0
-3V3
-Text Label 3800 1500 2    50   ~ 0
-Vin
-$Comp
-L Shield_Gas_Sensor_Arduino-rescue:CONN_01X04_MALE-conn J2
-U 1 1 5BC58C8B
-P 2550 2400
-F 0 "J2" H 2656 2890 50  0000 C CNN
-F 1 "CONN_01X04_MALE" H 2656 2799 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2550 2700 50  0001 C CNN
-F 3 "" H 2550 2700 50  0001 C CNN
-	1    2550 2400
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5BC58D11
@@ -451,40 +426,18 @@ $EndComp
 $Comp
 L power:+5V #PWR0102
 U 1 1 5BC58D87
-P 2850 2300
-F 0 "#PWR0102" H 2850 2150 50  0001 C CNN
-F 1 "+5V" V 2865 2428 50  0000 L CNN
-F 2 "" H 2850 2300 50  0001 C CNN
-F 3 "" H 2850 2300 50  0001 C CNN
-	1    2850 2300
+P 2850 2200
+F 0 "#PWR0102" H 2850 2050 50  0001 C CNN
+F 1 "+5V" V 2865 2328 50  0000 L CNN
+F 2 "" H 2850 2200 50  0001 C CNN
+F 3 "" H 2850 2200 50  0001 C CNN
+	1    2850 2200
 	0    1    1    0   
 $EndComp
-Text Label 2850 2500 0    50   ~ 0
+Text Label 2850 2300 0    50   ~ 0
 NC
-Text Label 2850 2700 0    50   ~ 0
+Text Label 2850 2400 0    50   ~ 0
 A0
-$Comp
-L Shield_Gas_Sensor_Arduino-rescue:CONN_01X08-conn J1
-U 1 1 5BC598C8
-P 4000 1250
-F 0 "J1" H 4078 1291 50  0000 L CNN
-F 1 "CONN_01X08" H 4078 1200 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 4000 1250 50  0001 C CNN
-F 3 "" H 4000 1250 50  0001 C CNN
-	1    4000 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5BC63AB1
-P 3800 1600
-F 0 "#PWR0103" H 3800 1350 50  0001 C CNN
-F 1 "GND" V 3805 1472 50  0000 R CNN
-F 2 "" H 3800 1600 50  0001 C CNN
-F 3 "" H 3800 1600 50  0001 C CNN
-	1    3800 1600
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:Buzzer BZ1
 U 1 1 5BCE0094
@@ -525,17 +478,6 @@ Wire Wire Line
 Wire Wire Line
 	7700 2100 7700 2250
 $Comp
-L Switch:SW_Push SW1
-U 1 1 5BCE6F8A
-P 7550 4600
-F 0 "SW1" V 7504 4748 50  0000 L CNN
-F 1 "SW_Push" V 7595 4748 50  0000 L CNN
-F 2 "Button_Switch_THT:SW_PUSH-12mm" H 7550 4800 50  0001 C CNN
-F 3 "" H 7550 4800 50  0001 C CNN
-	1    7550 4600
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0105
 U 1 1 5BCE7069
 P 7550 5000
@@ -548,10 +490,6 @@ F 3 "" H 7550 5000 50  0001 C CNN
 $EndComp
 Text Label 7550 4200 0    50   ~ 0
 Reset
-Wire Wire Line
-	7550 4200 7550 4400
-Wire Wire Line
-	7550 4800 7550 5000
 Text Label 10850 4800 0    50   ~ 0
 2
 Wire Notes Line
@@ -580,4 +518,66 @@ Wire Notes Line
 	6800 6400 11200 6400
 Wire Notes Line
 	6800 500  6800 6400
+$Comp
+L power:GND #PWR0103
+U 1 1 5BC63AB1
+P 5950 2050
+F 0 "#PWR0103" H 5950 1800 50  0001 C CNN
+F 1 "GND" V 5955 1922 50  0000 R CNN
+F 2 "" H 5950 2050 50  0001 C CNN
+F 3 "" H 5950 2050 50  0001 C CNN
+	1    5950 2050
+	1    0    0    -1  
+$EndComp
+Text Label 5750 2050 3    50   ~ 0
+3V3
+Text Label 5650 2050 3    50   ~ 0
+RST
+Text Label 5550 2050 3    50   ~ 0
+RTS
+Text Label 5450 2050 3    50   ~ 0
+CTS
+Text Label 5350 2050 3    50   ~ 0
+Rx
+Text Label 5250 2050 3    50   ~ 0
+Tx
+$Comp
+L RN2483_Breakout:RN2483_Breakout U2
+U 1 1 5BD9E979
+P 5500 1800
+F 0 "U2" H 6028 2040 50  0000 L CNN
+F 1 "RN2483_Breakout" H 6028 1949 50  0000 L CNN
+F 2 "Module_RN2483_Breakout:Module_RN2483_Breakout" H 5550 2600 50  0001 C CNN
+F 3 "" H 5550 2600 50  0001 C CNN
+	1    5500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual SW1
+U 1 1 5BDA4B30
+P 7550 4600
+F 0 "SW1" V 7504 4748 50  0000 L CNN
+F 1 "SW_Push_Dual" V 7595 4748 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 7550 4800 50  0001 C CNN
+F 3 "" H 7550 4800 50  0001 C CNN
+	1    7550 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 4200 7550 4400
+Wire Wire Line
+	7550 4800 7550 5000
+NoConn ~ 7350 4400
+NoConn ~ 7350 4800
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5BDAAC5A
+P 2650 2200
+F 0 "J1" H 2570 2517 50  0000 C CNN
+F 1 "Conn_01x04" H 2570 2426 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 2650 2200 50  0001 C CNN
+F 3 "~" H 2650 2200 50  0001 C CNN
+	1    2650 2200
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
