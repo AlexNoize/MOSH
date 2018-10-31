@@ -70,7 +70,7 @@ Holes
 Text Notes 8550 750  0    60   ~ 0
 Shield for Arduino that uses\nthe same pin disposition\nlike "Uno" board Rev 3.
 $Comp
-L conn:CONN_01X08 P1
+L Shield_Gas_Sensor_Arduino-rescue:CONN_01X08-conn P1
 U 1 1 56D70129
 P 9600 1950
 F 0 "P1" H 9600 2400 50  0000 C CNN
@@ -127,7 +127,7 @@ F 3 "" H 10300 3150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_01X06 P2
+L Shield_Gas_Sensor_Arduino-rescue:CONN_01X06-conn P2
 U 1 1 56D70DD8
 P 9600 2750
 F 0 "P2" H 9600 3100 50  0000 C CNN
@@ -138,7 +138,7 @@ F 3 "" H 9600 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_01X01 P5
+L Shield_Gas_Sensor_Arduino-rescue:CONN_01X01-conn P5
 U 1 1 56D71177
 P 10800 650
 F 0 "P5" V 10900 650 50  0000 C CNN
@@ -149,7 +149,7 @@ F 3 "" H 10800 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:CONN_01X01 P6
+L Shield_Gas_Sensor_Arduino-rescue:CONN_01X01-conn P6
 U 1 1 56D71274
 P 10900 650
 F 0 "P6" V 11000 650 50  0000 C CNN
@@ -160,7 +160,7 @@ F 3 "" H 10900 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:CONN_01X01 P7
+L Shield_Gas_Sensor_Arduino-rescue:CONN_01X01-conn P7
 U 1 1 56D712A8
 P 11000 650
 F 0 "P7" V 11100 650 50  0000 C CNN
@@ -171,7 +171,7 @@ F 3 "" H 11000 650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:CONN_01X01 P8
+L Shield_Gas_Sensor_Arduino-rescue:CONN_01X01-conn P8
 U 1 1 56D712DB
 P 11100 650
 F 0 "P8" V 11200 650 50  0000 C CNN
@@ -186,7 +186,7 @@ NoConn ~ 10900 850
 NoConn ~ 11000 850 
 NoConn ~ 11100 850 
 $Comp
-L conn:CONN_01X08 P4
+L Shield_Gas_Sensor_Arduino-rescue:CONN_01X08-conn P4
 U 1 1 56D7164F
 P 10000 2650
 F 0 "P4" H 10000 3100 50  0000 C CNN
@@ -234,7 +234,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 3000 8900 3000
 $Comp
-L conn:CONN_01X10 P3
+L Shield_Gas_Sensor_Arduino-rescue:CONN_01X10-conn P3
 U 1 1 56D721E0
 P 10000 1650
 F 0 "P3" H 10000 2200 50  0000 C CNN
@@ -431,44 +431,44 @@ Text Label 3800 1400 2    50   ~ 0
 Text Label 3800 1500 2    50   ~ 0
 Vin
 $Comp
-L conn:CONN_01X04_MALE J2
+L Shield_Gas_Sensor_Arduino-rescue:CONN_01X04_MALE-conn J2
 U 1 1 5BC58C8B
-P 4000 2500
-F 0 "J2" H 4106 2990 50  0000 C CNN
-F 1 "CONN_01X04_MALE" H 4106 2899 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4000 2800 50  0001 C CNN
-F 3 "" H 4000 2800 50  0001 C CNN
-	1    4000 2500
+P 2550 2400
+F 0 "J2" H 2656 2890 50  0000 C CNN
+F 1 "CONN_01X04_MALE" H 2656 2799 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2550 2700 50  0001 C CNN
+F 3 "" H 2550 2700 50  0001 C CNN
+	1    2550 2400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5BC58D11
-P 4300 2200
-F 0 "#PWR0101" H 4300 1950 50  0001 C CNN
-F 1 "GND" V 4305 2072 50  0000 R CNN
-F 2 "" H 4300 2200 50  0001 C CNN
-F 3 "" H 4300 2200 50  0001 C CNN
-	1    4300 2200
+P 2850 2100
+F 0 "#PWR0101" H 2850 1850 50  0001 C CNN
+F 1 "GND" V 2855 1972 50  0000 R CNN
+F 2 "" H 2850 2100 50  0001 C CNN
+F 3 "" H 2850 2100 50  0001 C CNN
+	1    2850 2100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR0102
 U 1 1 5BC58D87
-P 4300 2400
-F 0 "#PWR0102" H 4300 2250 50  0001 C CNN
-F 1 "+5V" V 4315 2528 50  0000 L CNN
-F 2 "" H 4300 2400 50  0001 C CNN
-F 3 "" H 4300 2400 50  0001 C CNN
-	1    4300 2400
+P 2850 2300
+F 0 "#PWR0102" H 2850 2150 50  0001 C CNN
+F 1 "+5V" V 2865 2428 50  0000 L CNN
+F 2 "" H 2850 2300 50  0001 C CNN
+F 3 "" H 2850 2300 50  0001 C CNN
+	1    2850 2300
 	0    1    1    0   
 $EndComp
-Text Label 4300 2600 0    50   ~ 0
+Text Label 2850 2500 0    50   ~ 0
 NC
-Text Label 4300 2800 0    50   ~ 0
+Text Label 2850 2700 0    50   ~ 0
 A0
 $Comp
-L conn:CONN_01X08 J1
+L Shield_Gas_Sensor_Arduino-rescue:CONN_01X08-conn J1
 U 1 1 5BC598C8
 P 4000 1250
 F 0 "J1" H 4078 1291 50  0000 L CNN
@@ -490,43 +490,32 @@ F 3 "" H 3800 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Buzzer BZ?
+L Device:Buzzer BZ1
 U 1 1 5BCE0094
 P 3350 3900
-F 0 "BZ?" V 3402 3713 50  0000 R CNN
+F 0 "BZ1" V 3402 3713 50  0000 R CNN
 F 1 "Buzzer" V 3311 3713 50  0000 R CNN
-F 2 "" V 3325 4000 50  0001 C CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 3325 4000 50  0001 C CNN
 F 3 "~" V 3325 4000 50  0001 C CNN
 	1    3350 3900
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D1
 U 1 1 5BCE0248
 P 3450 4300
-F 0 "D?" V 3488 4183 50  0000 R CNN
+F 0 "D1" V 3488 4183 50  0000 R CNN
 F 1 "LED" V 3397 4183 50  0000 R CNN
-F 2 "" H 3450 4300 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 3450 4300 50  0001 C CNN
 F 3 "~" H 3450 4300 50  0001 C CNN
 	1    3450 4300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 5BCE0530
-P 3250 4600
-F 0 "#PWR?" H 3250 4450 50  0001 C CNN
-F 1 "+5V" H 3265 4773 50  0000 C CNN
-F 2 "" H 3250 4600 50  0001 C CNN
-F 3 "" H 3250 4600 50  0001 C CNN
-	1    3250 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 5BCE4068
 P 3450 4600
-F 0 "#PWR?" H 3450 4350 50  0001 C CNN
+F 0 "#PWR0104" H 3450 4350 50  0001 C CNN
 F 1 "GND" H 3455 4427 50  0000 C CNN
 F 2 "" H 3450 4600 50  0001 C CNN
 F 3 "" H 3450 4600 50  0001 C CNN
@@ -540,21 +529,21 @@ Wire Wire Line
 Wire Wire Line
 	3450 4450 3450 4600
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 5BCE6F8A
 P 4500 4300
-F 0 "SW?" V 4454 4448 50  0000 L CNN
+F 0 "SW1" V 4454 4448 50  0000 L CNN
 F 1 "SW_Push" V 4545 4448 50  0000 L CNN
-F 2 "" H 4500 4500 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 4500 4500 50  0001 C CNN
 F 3 "" H 4500 4500 50  0001 C CNN
 	1    4500 4300
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 5BCE7069
 P 4500 4700
-F 0 "#PWR?" H 4500 4450 50  0001 C CNN
+F 0 "#PWR0105" H 4500 4450 50  0001 C CNN
 F 1 "GND" H 4505 4527 50  0000 C CNN
 F 2 "" H 4500 4700 50  0001 C CNN
 F 3 "" H 4500 4700 50  0001 C CNN
@@ -567,4 +556,20 @@ Wire Wire Line
 	4500 3900 4500 4100
 Wire Wire Line
 	4500 4500 4500 4700
+Text Label 7250 2050 0    50   ~ 0
+2
+Wire Notes Line
+	2200 1600 2200 2900
+Wire Notes Line
+	2200 2900 3300 2900
+Wire Notes Line
+	3300 2900 3300 1600
+Wire Notes Line
+	3300 1600 2200 1600
+Wire Notes Line
+	2200 1850 3300 1850
+Text Notes 2300 1750 0    50   ~ 0
+Gaz sensor connector
+Text Label 3250 4600 3    60   ~ 0
+9(**)
 $EndSCHEMATC
