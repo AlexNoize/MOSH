@@ -529,8 +529,6 @@ F 3 "" H 5950 2050 50  0001 C CNN
 	1    5950 2050
 	1    0    0    -1  
 $EndComp
-Text Label 5850 2050 3    50   ~ 0
-Vin
 Text Label 5750 2050 3    50   ~ 0
 3V3
 Text Label 5650 2050 3    50   ~ 0
