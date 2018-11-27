@@ -467,7 +467,6 @@ Wire Wire Line
 	3050 4850 4400 4850
 Wire Wire Line
 	6850 4850 6850 4250
-Connection ~ 3050 4850
 $Comp
 L power:GND #PWR05
 U 1 1 5BE40BAD
@@ -590,4 +589,5 @@ Text Label 2850 1700 3    50   ~ 0
 3V3
 Text Label 2950 1700 3    50   ~ 0
 Gas_out
+Connection ~ 3050 4850
 $EndSCHEMATC
