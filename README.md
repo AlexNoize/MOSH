@@ -9,5 +9,6 @@ The aim of this project was to design a complete PCB (Printed Circuit Board) imp
 ## Double layer transimpedance amplificator
 Let's have a look to the electrical circuit:
 
-/* Circuit scheme here */
+![alt text](https://github.com/AlexNoize/MOSH/blob/master/Screens/Scheme.PNG "Electrical scheme")
 
+On the left of the scheme, the entry resistor (R1) protect the operational amplifier from the electrostatic discharges, and is associated to the C1 capacitor to filter the voltage noises.
